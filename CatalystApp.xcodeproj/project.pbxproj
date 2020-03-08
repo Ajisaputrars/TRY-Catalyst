@@ -51,6 +51,7 @@
 		D75A5A5D2414D4B3004A74AD /* CatalystAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatalystAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D75A5A612414D4B3004A74AD /* CatalystAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalystAppUITests.swift; sourceTree = "<group>"; };
 		D75A5A632414D4B3004A74AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D75A5A6F2414D4D0004A74AD /* CatalystApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CatalystApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +102,7 @@
 		D75A5A3B2414D4B2004A74AD /* CatalystApp */ = {
 			isa = PBXGroup;
 			children = (
+				D75A5A6F2414D4D0004A74AD /* CatalystApp.entitlements */,
 				D75A5A3C2414D4B2004A74AD /* AppDelegate.swift */,
 				D75A5A3E2414D4B2004A74AD /* SceneDelegate.swift */,
 				D75A5A402414D4B2004A74AD /* ViewController.swift */,
@@ -438,7 +440,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CatalystApp/CatalystApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = 9Y224ZS8GH;
 				INFOPLIST_FILE = CatalystApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -447,6 +451,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ajisaputrars.CatalystApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -456,7 +461,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CatalystApp/CatalystApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = 9Y224ZS8GH;
 				INFOPLIST_FILE = CatalystApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -465,6 +472,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ajisaputrars.CatalystApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
